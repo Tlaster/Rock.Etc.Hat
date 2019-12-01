@@ -4,9 +4,9 @@ using Avalonia.Markup.Xaml;
 
 namespace Rock.Etc.Hat.Avalonia
 {
-    public class MainWindow : Window
+    public class RootWindow : Window
     {
-        public MainWindow()
+        public RootWindow()
         {
             InitializeComponent();
 #if DEBUG

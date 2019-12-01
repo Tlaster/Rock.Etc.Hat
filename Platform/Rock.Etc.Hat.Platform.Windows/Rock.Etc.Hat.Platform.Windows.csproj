@@ -1,7 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Autofac" Version="4.9.4" />
+      <PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="10.0.18362.2005" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Rock.Etc.Hat.Platform.Core\Rock.Etc.Hat.Platform.Core.csproj" />
+    </ItemGroup>
 
 </Project>

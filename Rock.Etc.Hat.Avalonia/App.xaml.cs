@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using Avalonia.Markup.Xaml;
 
-namespace AvaloniaApplication1
+namespace Rock.Etc.Hat.Avalonia
 {
     public class App : Application
     {

@@ -1,8 +1,35 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>netcoreapp3.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+        <Compile Update="**\*.xaml.cs">
+            <DependentUpon>%(Filename)</DependentUpon>
+        </Compile>
+        <AvaloniaResource Include="**\*.xaml">
+            <SubType>Designer</SubType>
+        </AvaloniaResource>
+        <AvaloniaResource Include="Assets\*" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Assets" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Avalonia" Version="0.9.0-preview9" />
+      <PackageReference Include="Avalonia.Desktop" Version="0.9.0-preview9" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Platform\Rock.Etc.Hat.Platform.Core\Rock.Etc.Hat.Platform.Core.csproj" />
+      <ProjectReference Include="..\Platform\Rock.Etc.Hat.Platform.Gtk\Rock.Etc.Hat.Platform.Gtk.csproj" />
+      <ProjectReference Include="..\Platform\Rock.Etc.Hat.Platform.MacOS\Rock.Etc.Hat.Platform.MacOS.csproj" />
+      <ProjectReference Include="..\Platform\Rock.Etc.Hat.Platform.Windows\Rock.Etc.Hat.Platform.Windows.csproj" />
+      <ProjectReference Include="..\Rock.Etc.Hat.Global\Rock.Etc.Hat.Global.csproj" />
+      <ProjectReference Include="..\Rocket.Chat.Net\Rocket.Chat.Net.csproj" />
+    </ItemGroup>
 </Project>

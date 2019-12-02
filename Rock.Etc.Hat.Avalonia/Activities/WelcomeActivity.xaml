@@ -1,0 +1,13 @@
+﻿<paging:Activity
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="Rock.Etc.Hat.Avalonia.Activities.WelcomeActivity"
+    xmlns:paging="clr-namespace:Rock.Etc.Hat.Avalonia.Controls.Paging">
+
+
+    <StackPanel>
+        <Button HorizontalAlignment="Center" Name="Button" VerticalAlignment="Center" Content="Click Me!" />
+        <TextBox />
+    </StackPanel>
+
+</paging:Activity>

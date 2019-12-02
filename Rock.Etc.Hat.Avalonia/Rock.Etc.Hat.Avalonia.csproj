@@ -30,6 +30,6 @@
       <ProjectReference Include="..\Platform\Rock.Etc.Hat.Platform.MacOS\Rock.Etc.Hat.Platform.MacOS.csproj" />
       <ProjectReference Include="..\Platform\Rock.Etc.Hat.Platform.Windows\Rock.Etc.Hat.Platform.Windows.csproj" />
       <ProjectReference Include="..\Rock.Etc.Hat.Global\Rock.Etc.Hat.Global.csproj" />
-      <ProjectReference Include="..\Rocket.Chat.Net\Rocket.Chat.Net.csproj" />
+      <ProjectReference Include="..\Api\Rocket.Chat.Net\Rocket.Chat.Net.csproj" />
     </ItemGroup>
 </Project>

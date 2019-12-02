@@ -7,7 +7,6 @@ namespace Rock.Etc.Hat.Platform.Windows
     {
         public void Initialization(ContainerBuilder builder)
         {
-            throw new System.NotImplementedException();
         }
     }
 }

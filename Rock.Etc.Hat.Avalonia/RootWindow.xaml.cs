@@ -1,6 +1,8 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using Rock.Etc.Hat.Avalonia.Activities;
+using Rock.Etc.Hat.Avalonia.Controls.Paging;
 
 namespace Rock.Etc.Hat.Avalonia
 {
@@ -17,6 +19,8 @@ namespace Rock.Etc.Hat.Avalonia
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);
+
+            this.FindControl<ActivityContainer>("RootActivityContainer").Navigate<WelcomeActivity>();
         }
     }
 }

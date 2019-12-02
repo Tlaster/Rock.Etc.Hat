@@ -1,8 +1,13 @@
 ﻿<Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:paging="clr-namespace:Rock.Etc.Hat.Avalonia.Controls.Paging"
         x:Class="Rock.Etc.Hat.Avalonia.RootWindow"
         Title="Rock.Etc.Hat">
-    <Grid>
-        
-    </Grid>
+    
+    <paging:ActivityContainer Name="RootActivityContainer">
+        <paging:ActivityContainer.ActivityTransition>
+            <paging:DefaultActivityTransition />
+        </paging:ActivityContainer.ActivityTransition>
+    </paging:ActivityContainer>
+
 </Window>
